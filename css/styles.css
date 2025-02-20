@@ -9,6 +9,11 @@
 	letter-spacing: 2px;
 }
 
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 .didact-gothic-regular {
 	font-family: "Didact Gothic", serif;
 	font-weight: 400;
