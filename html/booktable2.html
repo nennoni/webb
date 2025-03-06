@@ -4,6 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/styles.css">
+
+	<script src="../jquery/jquery-3.7.1.min.js"></script>
+	<link rel="stylesheet" href="../jquery/jquery-ui-1.14.1/jquery-ui.css">
+	<script src="../jquery/jquery-ui-1.14.1/jquery-ui.min.js"></script>
+
 	<title>Boka bord fortsättning</title>
 </head>
 <body style="background-color: #201919;">
@@ -54,9 +59,9 @@
 		<div class="specifications">
 			<h3>Tider</h3>
 			<div class="time">
-				<div class="hour">17:00</div><div class="hour">17:30</div><div class="hour">18:00</div><div class="hour">18:30</div>
-				<div class="hour">19:00</div><div class="hour">19:30</div><div class="hour">20:00</div><div class="hour">20:30</div>
-				<div class="hour">21:00</div><div class="hour">21:30</div>
+				<div class="hour hidden">17:00</div><div class="hour hidden">17:30</div><div class="hour hidden">18:00</div><div class="hour hidden">18:30</div>
+				<div class="hour hidden">19:00</div><div class="hour hidden">19:30</div><div class="hour hidden">20:00</div><div class="hour hidden">20:30</div>
+				<div class="hour hidden">21:00</div><div class="hour hidden">21:30</div>
 			</div>
 
 			<form class="request">
@@ -66,5 +71,6 @@
 			</form>
 		</div>
 	</div>
+	<script src="../javascript/booktable.js"></script>
 </body>
 </html>
