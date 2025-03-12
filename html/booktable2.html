@@ -6,28 +6,40 @@
 	<link rel="stylesheet" href="../css/styles.css">
 
 	<script src="../jquery/jquery-3.7.1.min.js"></script>
-	<link rel="stylesheet" href="../jquery/jquery-ui-1.14.1/jquery-ui.css">
+	<!-- <link rel="stylesheet" href="../jquery/jquery-ui-1.14.1/jquery-ui.css"> -->
 	<script src="../jquery/jquery-ui-1.14.1/jquery-ui.min.js"></script>
 
 	<title>Boka bord fortsättning</title>
 </head>
 <body style="background-color: #201919;">
 
-	<nav class="navbar">
-		<ul class="navlinks">
-			<li><a href="../html/index.html">Hem</a></li>
-			<li><a href="../html/about.html">Om Oss</a></li>
-			<li><a href="../html/meny.html">Meny</a></li>
-			<li><a href="../html/extra.html">Extra content</a></li>
-		</ul>
-
-		<div class="right-content">
-			<a href="#">SWE</a>
-			<a href="../english/booktableeng.html">ENG</a>
-			<a href="https://www.facebook.com/profile.php?id=100028975106962&ref=ts&fref=ts#" target="_blank"><img src="../Janusbilder/FACEBOOK.png" alt=""></a>
-			<a href="https://www.instagram.com/janusbistro/" target="_blank"><img src="../Janusbilder/INSTAGRAM.png" alt=""></a>
-		</div>
-	</nav>
+	<div class="menu-container" id="menu-container">
+		<nav class="navbar">
+			<ul class="navlinks">
+				<li onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+					<a href="../html/index.html">Hem</a></li>
+				<li onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+					<a href="../html/meny.html">Meny</a></li>
+				<li onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+					
+					<a href="../html/about.html">Om Oss</a></li>
+				<li onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+					<a href="../html/extra.html">Extra content</a></li>
+			</ul>
+	
+			<div class="right-content">
+				<a href="#">SWE</a>
+				<a href="../english/abouteng.html">ENG</a>
+				<a href="https://www.facebook.com/profile.php?id=100028975106962&ref=ts&fref=ts#" target="_blank">
+					<img src="../Janusbilder/FACEBOOK.png" alt=""></a>
+				<a href="https://www.instagram.com/janusbistro/" target="_blank">
+					<img src="../Janusbilder/INSTAGRAM.png" alt=""></a>
+			</div>
+		</nav>
+	</div>
+	<div class="hamburger" id="hamburger">
+		<img src="../Janusbilder/menu_24dp_D3BE4A_FILL0_wght400_GRAD0_opsz24.png" alt="">
+	</div>
 
 	<div class="container4">
 		<img class="background3" src="../Janusbilder/9.jpg" alt="">
@@ -44,13 +56,13 @@
 					<div class="day">Sön</div>
 				
 					<div></div><div></div> <div></div><div></div> <div></div>
-					<div class="date">1</div> <div class="date">2</div>
+					<div class="date">1</div> <div class="date sunday">2</div>
 					<div class="date">3</div> <div class="date">4</div><div class="date">5</div> <div class="date">6</div> 
-					<div class="date">7</div> <div class="date">8</div> <div class="date">9</div>
+					<div class="date">7</div> <div class="date">8</div> <div class="date sunday">9</div>
 					<div class="date">10</div> <div class="date">11</div> <div class="date">12</div> <div class="date">13</div>
-					 <div class="date">14</div> <div class="date">15</div> <div class="date">16</div>
+					 <div class="date">14</div> <div class="date">15</div> <div class="date sunday">16</div>
 					<div class="date">17</div> <div class="date">18</div> <div class="date">19</div> <div class="date">20</div>
-					 <div class="date">21</div> <div class="date">22</div> <div class="date">23</div>
+					 <div class="date">21</div> <div class="date">22</div> <div class="date sunday">23</div>
 					<div class="date">24</div> <div class="date">25</div> <div class="date">26</div> <div class="date">27</div>
 					 <div class="date">28</div> <div class="date">29</div>
 				</div>
@@ -72,5 +84,7 @@
 		</div>
 	</div>
 	<script src="../javascript/booktable.js"></script>
+	<script src="../javascript/navbar.js"></script>
+	<script src="../javascript/hambruger.js"></script>
 </body>
 </html>

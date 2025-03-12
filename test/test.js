@@ -1,9 +1,3 @@
-
-function showContent() {
-	var content = document.getElementById("content");
-	if (content.style.display === "none") {
-		content.style.display = "block";
-	} else {
-		content.style.display = "none";
-	}
-}
+document.getElementById("hamburger").addEventListener("click", function() {
+    document.getElementById("nav-links").classList.toggle("active");
+});
